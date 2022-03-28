@@ -15,7 +15,6 @@ services:
      - discovery.type=single-node
      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
      - TZ=Asia/Seoul
-     - ELASTIC_PASSWORD=zktm500cc
      - xpack.security.enabled=false
     user: root
     restart: always
@@ -30,7 +29,6 @@ services:
      - elastic
     environment:
      - TZ=Asia/Seoul
-     - KIBANA_SYSTEM_PASSWORD=zktm500cc
     restart: always
     privileged: true
     depends_on:
